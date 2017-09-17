@@ -1,0 +1,97 @@
+Opa, olá pessoal.
+ 
+Atualizando o documento com alguns comandos do git. 
+Pra ficar mais fácil para nós e não termos que pesquisar eles toda hora.
+Traduzi do site original. Sintam-se livres para modificar qualquer coisa.
+
+%================================================================================================%
+COMANDOS GIT -V.01 Doc atualizado em 10.05.2017 às 18h16 por Iv-Hub
+Link Original: https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html
+%================================================================================================%
+
+Dizer para o git quem você é:          git config --global user.name "seu nome"
+                                       git config --global user.email email@exemplo.com
+--------------------------------------------------------------------------------------------------
+
+Criar um Repositório Local:            git init
+--------------------------------------------------------------------------------------------------
+
+Criar uma Cópia de Repositório:        git clone caminho/para/o/repositório
+
+Para um servidor remoto, utilizar:     git clone usuario@host:/path/to/repository
+--------------------------------------------------------------------------------------------------
+
+Adicionar Arquivos:                    git add <nome do arquivo>
+                                       git add *
+
+DICA: Pressionar "tab" pode ser útil, pois ele irá buscar os documentos dentro da pasta e marcar 
+automaticamente o nome do arquivo utilizado (para o caso de arquivos que não se tem certeza do
+nome, ou existe algum caracter especial).
+--------------------------------------------------------------------------------------------------
+
+Confirmar Alterações:                  git commit -m "Mudei aqui men kk"
+
+Para caso queira 
+confirmar para qualquer 
+arquivo que mudou em git add, 
+ou que sofreu
+alterações até então:                  git commit -a
+--------------------------------------------------------------------------------------------------
+
+Enviar as alterações para o 
+master branch do seu repositório 
+remoto:                                git push origin master
+--------------------------------------------------------------------------------------------------
+
+Status:                                git status
+--------------------------------------------------------------------------------------------------
+
+Conectar Com o Repositório Remoto:    git remote add origin <servidor> 
+                                      git remote -v
+--------------------------------------------------------------------------------------------------
+
+Ramificações (branches)
+
+criar uma nova:                       git checkout -b <nome>
+trocar uma branch por outra:          git checkout <nome>
+listar todas as branches:             git branch
+deletar a branch:                     git branch -d <nome>
+
+comandos para repositorios remotos:
+
+enviar a branch:                      git push origin <nome>
+enviar todas as branches:             git push --all origin
+deletar a branch:                     git push origin :<nome>
+enviar mudanças:                      git pull
+
+MERGE:
+
+-uma branch com a branch ativa:       git merge <nome>
+ver todos os problemas relacionados 
+a fundir as branches:                 git diff
+-conflitos com o arquivo base:        git diff --base <nome>
+-prever alterações:                   git diff <raiz> <alvo>
+-depois de solucionar os conflitos,
+você marca o arquivo mudado:          git add <nome>
+--------------------------------------------------------------------------------------------------
+
+TAGS:
+
+para mudanças:                       git tag 1.0.0 <commitID>
+Obter o ID:                          git log
+push todas as tags para o 
+repositorio remoto:                  git push --tags origin                     
+--------------------------------------------------------------------------------------------------
+
+desfazer mudanças locais:            git checkout -- <nome>
+
+você pode fazer para 
+todas as alterações dessa maneira:   git fetch origin
+                                     git reset --hard origin/master
+--------------------------------------------------------------------------------------------------
+
+Pesquisar o 
+diretório para foo():                git grep "foo()"
+--------------------------------------------------------------------------------------------------    
+
+ 
