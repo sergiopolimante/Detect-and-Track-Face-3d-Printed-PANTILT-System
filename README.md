@@ -1,5 +1,8 @@
 # Detect-and-Track-Face-3d-Printed-PANTILT-System
 
+https://www.youtube.com/watch?v=jAMkpHltUtI&ab_channel=Sergio
+
+
 This project is part of the Robotics Engineering course at UFABC.
 The goal of the system is to detect and follow faces in its field of view.
 
